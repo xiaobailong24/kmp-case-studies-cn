@@ -1,4 +1,4 @@
-# <img src="/images/kotlin-multiplatform-logo.svg" width="60"/>KMP case studies in China.
+# <img src="/images/kotlin-multiplatform-logo.svg" width="60"/>  KMP case studies in China.
 
 [![Pull request](https://img.shields.io/badge/PRs-welcome-success?style=flat)](https://github.com/xiaobailong24//kotlin-multiplatform-dev-docs/pulls)
 
