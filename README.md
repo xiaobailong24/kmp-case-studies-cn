@@ -49,6 +49,36 @@
         </details>
     </td>
   </tr>
+<tr>
+    <td><a href="https://www.ctrip.com">携程</a></td>
+    <td>
+        <ul>
+            <li><a href="https://apps.apple.com/cn/app/id379395415">携程</a></li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+           <li><img src="images/icons/android.svg" alt="android" width="40" height="40"/></li>
+           <li><img src="images/icons/ios.svg" alt="ios" width="40" height="40"/></li>
+       </ul>
+    </td>
+    <td>
+        <ul>
+          <li><a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=3944652285472636935">《携程技术-Kotlin专辑》-陈琦 & 乔禹昂 等</a></li>
+          <li><a href="https://github.com/ctripcorp/SQLlin">《KMP ORM 框架》-乔禹昂</a></li>
+          <li><a href="https://github.com/ctripcorp/mmkv-kotlin">《MVVM 的 KMP 封装》-乔禹昂</a></li>
+        </ul>
+    </td>
+    <td>
+        <details>
+          <summary>国内 KMP 探索和推广者先驱。2020 年开始携程机票 Android 核心业务逐步由 Java 迁移至 Kotlin，2021 年初开始探索 KMP 
+            来实现跨端业务逻辑复用。攻克了工程集成、基础组件 KMP 化、iOS cinterop 互操作、Kotlin/Native 异步并发模型等多个疑难问题。
+            向业界输出多篇实践和原理性介绍，开源两个框架扩展 KMP 生态。
+          </summary>
+          <img src="images/case-studies/ctrip-ctrip-kmp.png" alt="ctrip-ctrip-kmp" width="500" height="200"/>
+        </details>
+    </td>
+  </tr>
   <tr>
     <td><a href="https://www.bilibili.com">哔哩哔哩</a></td>
     <td>
