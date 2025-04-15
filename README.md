@@ -208,10 +208,14 @@
     </td>
     <td>
         <ul>
-            <li><a href="topics/Kimi.md">Kimi 客户端跨端开发实践：基于 KMP+CMP 的探索与实现</a></li>
+            <li><a href="topics/case-studies-cn/Kimi.md">Kimi 客户端跨端开发实践：基于 KMP+CMP 的探索与实现</a></li>
         </ul>
     </td>
     <td>
+        <details>
+          <summary>Kimi 客户端团队通过 KMP+CMP 跨端开发方案，成功实现了 PC 和 Android 双端的 UI 及逻辑代码共享，并进一步拓展至 PC、鸿蒙和 Android 三端的逻辑代码共享，显著提升了开发效率和代码复用性。
+          </summary>
+        </details>
     </td>
   </tr>
 
