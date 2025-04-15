@@ -192,5 +192,27 @@
         </details>
     </td>
   </tr>
+  <tr>
+    <td><a href="https://www.moonshot.cn/">月之暗面</a></td>
+    <td>
+        <ul>
+          <li><a href="https://kimi.moonshot.cn/">Kimi</a></li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li><img src="images/icons/android.svg" alt="android" width="40" height="40"/></li>
+            <li><img src="images/icons/desktop.svg" alt="desktop" width="60" height="40"/></li>
+            <li><img src="images/icons/harmonyos.svg" alt="harmonyos" width="80" height="40"/></li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li><a href="topics/Kimi.md">Kimi 客户端跨端开发实践：基于 KMP+CMP 的探索与实现</a></li>
+        </ul>
+    </td>
+    <td>
+    </td>
+  </tr>
 
 </table>
