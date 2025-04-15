@@ -36,7 +36,7 @@
 
 ## PC 中的挑战
 
-1. 与原生 Window 的交互问题：基于 Java AWT 的交互方式无法方便地调用一些高级功能，限制了应用在 Windows 平台上的功能拓展。为了解决这一问题，我们积极探索基于 JetBrains 的 Java Runtime，以优化交互和 UI 实现，提升应用在 Windows 系统中的表现。
+1. 与原生 Window 的交互问题：基于 Java AWT 的交互方式无法方便地调用一些高级功能，限制了应用在 Windows 和 mac 平台上的功能拓展。为了解决这一问题，我们积极探索基于 JetBrains 的 Java Runtime，以优化交互和 UI 实现，提升应用在 Windows 和 mac 系统中的表现。
 2. 打包工具的限制：在 Windows 平台下，打包工具的选择受限于 jpackage 和 wixtoolset，难以满足我们对 Windows 安装包的定制化要求。因此，我们同步探索了基于 InnoSetup 的自定义打包工具，以实现更符合项目需求的安装包制作，提高应用的分发效率和用户体验。
 
 ## Kotlin JS 在鸿蒙中的挑战
