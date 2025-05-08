@@ -188,6 +188,7 @@
     <td>
         <ul>
           <li><a href="https://apps.apple.com/cn/app/id387682726">淘宝</a></li>
+          <li><a href="https://apps.apple.com/cn/app/id333206289">支付宝</a></li>
         </ul>
     </td>
     <td>
@@ -202,6 +203,7 @@
         <ul>
             <li><a href="https://d2.alibabatech.com/18">《基于KMP的原生研发框架新探索-DX4.0》-王康(正物)</a></li>
             <li><a href="https://d2.alibabatech.com/">《淘宝 weex 跨多端业务高效交付实践》-张翰(门柳) & 史健平(楚奕)</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/vcuo2YJsrn3kQcTNuoLuGQ">《支付宝客户端 Kotlin/Native 包体积优化实践》-李皓骅(亿晨)</a></li>
         </ul>
     </td>
     <td>
@@ -219,6 +221,19 @@
             完成鸿蒙平台适配并探索 Compose 融合方案，推动跨端技术向原生化、高性能方向演进。
           </summary>
           <img src="images/case-studies/alibaba-taobao-weex.png" alt="alibaba-taobao-weex" width="500" height="200"/>
+        </details>
+        <br>
+        <details>
+          <summary>支付宝客户端引入了基于 Kotlin Multiplatform (KMP) 的原生跨端开发模式，进行三端一码（即 Android、iOS、鸿蒙使用同一套代码）。
+            Android 平台采用了 Kotlin/JVM。iOS 和鸿蒙平台则使用了 Kotlin/Native（未来可能扩展到 Kotlin/JS 或 Kotlin/Wasm）。
+            同时，引入 Compose Multiplatform (CMP) 作为跨端 UI 方案 ，并且使用了一些如 Lottie（Compottie） 等第三方库。
+            面对包大小体积的挑战，深入分析和挖掘 Kotlin/Native 编译出的代码，实践总结一些优化方法，
+            主要包括包括：编译参数优化、精细管理导出符号 + DCE 的优化方法（暂时未讨论 Kotlin/JVM 等情况）。
+            成功降低了支付宝客户端的安装包大小，iOS Framework 编译后的二进制产物体积从 28MB 减少到 15MB。
+            支付宝 iOS 整个 IPA 包体积减少约 4.4MB。鸿蒙（OHOS）平台 KMP 动态库在进行 strip 优化后体积减少约 8MB。
+            降低新接入 KMP 和 CMP 框架的独立应用的初次安装包体积成本，让跨端技术更加高效、经济地落地。
+          </summary>
+          <img src="images/case-studies/alibaba-alipay-cmp.png" alt="alibaba-alipay-cmp" width="500" height="200"/>
         </details>
     </td>
   </tr>
