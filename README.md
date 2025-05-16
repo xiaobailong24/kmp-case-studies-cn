@@ -249,6 +249,7 @@
             <li><img src="images/icons/android.svg" alt="android" width="40" height="40"/></li>
             <li><img src="images/icons/desktop.svg" alt="desktop" width="60" height="40"/></li>
             <li><img src="images/icons/harmonyos.svg" alt="harmonyos" width="80" height="40"/></li>
+            <li><img src="images/icons/compose-multiplatform.svg" alt="compose-multiplatform" width="60" height="40"/></li>
         </ul>
     </td>
     <td>
