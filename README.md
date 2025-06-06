@@ -129,27 +129,40 @@
     </td>
     <td>
         <ul>
+          <li><a href="https://mp.weixin.qq.com/s/XiJJYdr59SV2wUwgjYJztQ">《腾讯开源跨平台开发框架 Kuikly，能显著提升多端开发效率》-Kuikly</a></li>
+          <li><a href="https://mp.weixin.qq.com/s/eP3DxAkxX0z8xSMPY9q6TA">《腾讯Kuikly框架鸿蒙版正式开源 —— 揭秘卓越性能适配之旅》-Kuikly</a></li>
           <li><a href="https://www.bilibili.com/video/BV1JtcJeJEoQ">《QQ NTCompose：一个基于 KMP 及 Compose 范式和原生渲染的多平台开发框架》-林锦涛</a></li>
+          <li><a href="https://mp.weixin.qq.com/s/GTkzHTvWIdDmxtlRVpNgfw">《重磅！支持纯血鸿蒙！腾讯视频ovCompose跨平台框架发布》-腾讯视频</a></li>
           <li><a href="https://www.secon.vip/HarmonyOSNEXT">《腾讯视频 KMP 跨 Android、iOS、鸿蒙实践》-陈雄</a></li>
           <li><a href="https://www.bilibili.com/video/BV1ntcJeJEBb">《腾讯视频使用 KMP Compose 适配鸿蒙的实践》-王泽湘</a></li>
         </ul>
     </td>
     <td>
         <details>
-          <summary>NTCompose 是腾讯 QQ 团队基于 KMP 和 Compose 构建的原生渲染跨端方案，支持 Android/iOS/鸿蒙/桌面/Web/小程序六端。
-            通过跨平台 Compose Runtime 驱动各平台原生 UI 渲染，提供完全跨平台的声明式 UI 开发框架和逻辑 API 能力。
-            适配鸿蒙采用纯 C++ 实现鸿蒙 Render、设计多线程渲染流程机制、使用 capi 命令式接口实现渲染协议等方案，
-            首屏耗时比类 RN 框架快 5 倍。
+          <summary>Kuikly 是腾讯广泛使用的跨端开发框架，基于 Kotlin Multiplatform 技术构建，为开发者了提供技术栈更统一的跨端开发体验。
+            Kuikly 已在腾讯内部大规模应用，目前覆盖 QQ、腾讯新闻、QQ 音乐、搜狗输入法、QQ 浏览器等 15+ 款 APP 、落地 500+ 业务页面，
+            日均 PV 达亿级。已在业务中广泛使用，显著提升了多端开发效率。
+            部分业务在鸿蒙端完全采用 Kuikly 进行开发，进而复用到Android 和 iOS ，显著提升了跨端开发效率。
+            框架整体分为 KuiklyBase 和 KuiklyUI 两部分，其中KuiklyBase 与腾讯视频 ovCompose 共建复用。
+            具备一码五端，支持鸿蒙平台，原生级性能体验，Kotlin 语言驱动，纯原生开发工具链，声明+响应式 DSL，支持页面级动态化，轻量稳定易维护，高一致性原生渲染方案.
           </summary>
-          <img src="images/case-studies/tencent-qq-ntcompose.png" alt="tencent-qq-ntcompose" width="500" height="600"/>
+          <img src="images/case-studies/tencent-tds-kuikly.png" alt="tencent-tds-kuikly" width="500" height="600"/>
+          <img src="images/case-studies/tencent-tds-kuikly-ohos.png" alt="tencent-tds-kuikly-ohos" width="500" height="600"/>
         </details>
         <br>
         <details>
-          <summary>腾讯视频基于 KMP 和 CMP 实现 Android/iOS/鸿蒙三端逻辑与 UI 统一，2024 年完成鸿蒙适配。
-            通过深入研究 Kotlin/Native 编译器和运行时原理，攻克了函数内联、thread_local 及协程等性能难题，
-            并通过移植 CMP Skia 渲染引擎对接鸿蒙 XComponent 来适配鸿蒙，解决原生混排、嵌套滑动、字体异常等问题。
+          <summary>ovCompose（online-video-compose）是腾讯大前端领域Oteam中，腾讯视频团队基于 Compose Multiplatform 生态推出的跨平台开发框架，
+            旨在弥补JetBrains Compose Multiplatform不支持鸿蒙平台的遗憾与解决iOS平台混排受限的问题，便于业务构建全跨端App。
+            同时腾讯视频深度参与Oteam并推出了KuiklyBase，涵盖Kotlin/Native的鸿蒙适配、组件生态、鸿蒙编译、堆栈还原、工具链相关建设，助力业界KMP开发者提高鸿蒙适配效率。
+            ovCompose已经在腾讯视频鸿蒙平台全面落地，成为鸿蒙平台首个全跨端APP。随着鸿蒙系统的发展，ovCompose 和 KuiklyBase 也会在未来进一步扩展到TV和PC端。
+            采用高性能的 Kotlin/Native 方案适配鸿蒙，鸿蒙三明治架构（Skia 渲染使用 XComponent 组件作为画布）支持混排，三端高一致性。
+            iOS 端采用了指令映射（使用 UIKit 实现Compose Canvas）的多模态渲染自研实现方案，解放混排能力，解决了 Compose 在 iOS 上面临的诸多难题。
+            业务团队甚至可以根据实际应用场景在基于 UIKit 实现的自研指令映射方案或官方的Skia渲染方案之间进行自由切换，并且可以在 Runtime 期共存。
+            并进行了大量 Kotlin/Native 性能优化，包括 GC 优化（GC 抑制、GC 分段、Sweep 优化），堆 Dump 优化等。
+            为 KuiklyBase 组件生态建设了堆栈还原、ArkTS 互调用、逻辑组件、UI 组件等多个组件。
           </summary>
-          <img src="images/case-studies/tencent-qqlive-compose.png" alt="tencent-qqlive-compose" width="500" height="200"/>
+          <img src="images/case-studies/tencent-onlinevideo-ovcompose.png" alt="tencent-onlinevideo-ovcompose" width="500" height="200"/>
+          <img src="images/case-studies/tencent-onlinevideo-ovcompose-vs-kuikly.png" alt="tencent-onlinevideo-ovcompose-vs-kuikly" width="500" height="200"/>
         </details>
     </td>
   </tr>
