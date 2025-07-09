@@ -96,8 +96,10 @@
     </td>
     <td>
         <ul>
+          <li><a href="https://mp.weixin.qq.com/s/yRwkbQxFsRBNZW3Z-S1A8Q">《B站在KMP跨平台的业务实践之路》-肖志康 & Snorlax</a></li>
           <li><a href="https://www.bilibili.com/video/BV1ntcJeJEsF">《BiliBili 的鸿蒙之路：从 Kotlin/JS 到 Kotlin/Native 的进化之路》-臧至聪</a></li>
           <li><a href="https://mp.weixin.qq.com/s/UajaKomk8XQTwn3BWLo6gw">《基于Kotlin Multiplatform的鸿蒙跨平台开发实践》-臧至聪 & 狒狒</a></li>
+          <li><a href="https://mp.weixin.qq.com/s/nRmwpSGlFgvROs1lRVuAIw">《工程化视角的 Kotlin Multiplatform核心解读及优化》-Snorlax</a></li>
           <li><a href="https://b.geekbang.org/mall/events/qcon/2024/beijing/presentation/5753">《Kotlin Multiplatform 基于 Bazel 的逻辑层跨平台 (iOS、Android、Harmony) 实践》-张忻正</a></li>
         </ul>
     </td>
@@ -106,8 +108,14 @@
           <summary>哔哩哔哩 Android、iOS、鸿蒙三端采用 KMP 逻辑跨平台和原生 UI 开发。其中鸿蒙版适配，
             初期采用 Kotlin/JS 复用业务逻辑快速适配，为解决调试困难、性能瓶颈及多线程限制，转向 Kotlin/Native 方案。
             通过定制编译器和运行时支持鸿蒙工具链，适配生态基础库，并自研 NMB(Napi Module Binding) KSP 插件，实现 Kotlin 与 ArkTS 高效互操作。
-            此外在探索 CMP 实现跨平台 UI 开发，进一步提升研发效率、同时保证用户体验。</summary>
+            此外在探索 CMP 实现 Android & iOS 跨平台 UI 开发，通过 UI 逻辑分离策略，在私信模块的成功落地。
+            工程化方面，解读分析了 KMP 的构建系统，插件系统，IDEA 集成等等问题，并且提出了基于 Bazel 构建系统 和 Monorepo 的解决方案，实现了 Kotlin Swift Objective-C 三者之间的无缝互调和多语言混编，
+            突破了官方所有的 KMP 模块只能聚合成为一个 framework 中的一个模块进行导出的限制，成为业界首个实现分模块导出的方案，甚至遥遥领先于官方。
+          </summary>
           <img src="images/case-studies/bilibili-bilibili-kmp.png" alt="bilibili-bilibili-kmp" width="500" height="200"/>
+          <img src="images/case-studies/bilibili-bilibili-kmp-bazel.png" alt="bilibili-bilibili-kmp-bazel" width="500" height="200"/>
+          <img src="images/case-studies/bilibili-bilibili-architecture.png" alt="bilibili-bilibili-architecture" width="500" height="200"/>
+          <img src="images/case-studies/bilibili-bilibili-cmp-message.png" alt="bilibili-bilibili-cmp-message" width="500" height="200"/>
         </details>
     </td>
   </tr>
