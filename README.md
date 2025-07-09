@@ -100,6 +100,7 @@
           <li><a href="https://www.bilibili.com/video/BV1ntcJeJEsF">《BiliBili 的鸿蒙之路：从 Kotlin/JS 到 Kotlin/Native 的进化之路》-臧至聪</a></li>
           <li><a href="https://mp.weixin.qq.com/s/UajaKomk8XQTwn3BWLo6gw">《基于Kotlin Multiplatform的鸿蒙跨平台开发实践》-臧至聪 & 狒狒</a></li>
           <li><a href="https://mp.weixin.qq.com/s/nRmwpSGlFgvROs1lRVuAIw">《工程化视角的 Kotlin Multiplatform核心解读及优化》-Snorlax</a></li>
+          <li><a href="https://mp.weixin.qq.com/s/b8_s1iboJMEdEvyMd59u-g">《探讨跨平台技术与跨平台UI框架及Kotlin Multiplatform在bilibili的实践》-Snorlax & 西瓜皮</a></li>
           <li><a href="https://b.geekbang.org/mall/events/qcon/2024/beijing/presentation/5753">《Kotlin Multiplatform 基于 Bazel 的逻辑层跨平台 (iOS、Android、Harmony) 实践》-张忻正</a></li>
         </ul>
     </td>
