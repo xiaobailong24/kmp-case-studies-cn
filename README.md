@@ -138,6 +138,7 @@
     </td>
     <td>
         <ul>
+          <li><a href="https://mp.weixin.qq.com/s/x9TyypzmwraeOvEXHSiiCg">《腾讯Kuikly框架进一步开源，新增支持Web，开启一码五端新体验！》-Kuikly</a></li>
           <li><a href="https://mp.weixin.qq.com/s/XiJJYdr59SV2wUwgjYJztQ">《腾讯开源跨平台开发框架 Kuikly，能显著提升多端开发效率》-Kuikly</a></li>
           <li><a href="https://mp.weixin.qq.com/s/eP3DxAkxX0z8xSMPY9q6TA">《腾讯Kuikly框架鸿蒙版正式开源 —— 揭秘卓越性能适配之旅》-Kuikly</a></li>
           <li><a href="https://www.bilibili.com/video/BV1JtcJeJEoQ">《QQ NTCompose：一个基于 KMP 及 Compose 范式和原生渲染的多平台开发框架》-林锦涛</a></li>
@@ -149,11 +150,11 @@
     <td>
         <details>
           <summary>Kuikly 是腾讯广泛使用的跨端开发框架，基于 Kotlin Multiplatform 技术构建，为开发者了提供技术栈更统一的跨端开发体验。
-            Kuikly 已在腾讯内部大规模应用，目前覆盖 QQ、腾讯新闻、QQ 音乐、搜狗输入法、QQ 浏览器等 15+ 款 APP 、落地 500+ 业务页面，
-            日均 PV 达亿级。已在业务中广泛使用，显著提升了多端开发效率。
+            Kuikly 已在腾讯内部大规模应用，目前覆盖 QQ、腾讯新闻、QQ 音乐、搜狗输入法、QQ 浏览器等 15+ 款 APP 、落地 1000+ 业务页面，
+            日活用户超 5 亿。已在业务中广泛使用，显著提升了多端开发效率。
             部分业务在鸿蒙端完全采用 Kuikly 进行开发，进而复用到Android 和 iOS ，显著提升了跨端开发效率。
             框架整体分为 KuiklyBase 和 KuiklyUI 两部分，其中KuiklyBase 与腾讯视频 ovCompose 共建复用。
-            具备一码五端，支持鸿蒙平台，原生级性能体验，Kotlin 语言驱动，纯原生开发工具链，声明+响应式 DSL，支持页面级动态化，轻量稳定易维护，高一致性原生渲染方案.
+            具备一码五端（Android、iOS、鸿蒙、H5、微信小程序），支持鸿蒙平台，原生级性能体验，Kotlin 语言驱动，纯原生开发工具链，声明+响应式 DSL，支持页面级动态化，轻量稳定易维护，高一致性原生渲染方案.
           </summary>
           <img src="images/case-studies/tencent-tds-kuikly.png" alt="tencent-tds-kuikly" width="500" height="600"/>
           <img src="images/case-studies/tencent-tds-kuikly-ohos.png" alt="tencent-tds-kuikly-ohos" width="500" height="600"/>
