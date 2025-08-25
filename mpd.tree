@@ -38,6 +38,7 @@
 	<toc-element toc-title="Compose Multiplatform UI framework">
 		<toc-element toc-title="Why Compose Multiplatform" href="https://www.jetbrains.com/lp/compose-multiplatform/"/>
 		<toc-element toc-title="What's new in Compose Multiplatform">
+			<toc-element topic="whats-new-kotlin-ecosystem-2024-2025.md" toc-title="What's new in Kotlin ecosystem"/>
 			<toc-element topic="whats-new-compose-170.md"/>
 			<toc-element accepts-web-file-names="whats-new-compose-eap.html" topic="whats-new-compose-1610.md"/>
 			<toc-element accepts-web-file-names="whats-new-compose-1-6-0.html" topic="whats-new-compose.md"/>
