@@ -14,7 +14,7 @@ Be sure to check it out to have more context for the direction we're taking.
 
 ## Key priorities
 
-* Stable Compose Multiplatform for iOS: driving the iOS target to a stable release involves both improving the underlying framework
+* ✅ **Stable Compose Multiplatform for iOS**: We have successfully driven the iOS target to a stable release, improving the underlying framework
     and iOS-specific integrations and benchmarks.
 * Better support for multiplatform development in IntelliJ-based IDEs,
     providing an optimized environment for Kotlin Multiplatform and Compose Multiplatform.
@@ -27,6 +27,20 @@ Be sure to check it out to have more context for the direction we're taking.
     for iOS and Android, including sharing UI code using Compose Multiplatform.
 
 You can find frequently asked questions and answers in the [FAQ section](#faq).
+
+## Recent achievements (2024-2025)
+
+The last six months have been huge for Kotlin! Here are the major milestones we've achieved:
+
+* ✅ **Kotlin Language Server Protocol is now in Preview** - Enhancing IDE support and development experience
+* ✅ **Compose Multiplatform for iOS is now Stable** - Production-ready multiplatform UI development for iOS
+* ✅ **New Kotlin Multiplatform plugin for IntelliJ IDEA and Android Studio** - Improved tooling and project setup experience
+* ✅ **Kotlin Rich Errors feature is in development** - Better error reporting and debugging capabilities
+* ✅ **Kotlin 'Unused return value checker' will be available in Kotlin 2.3** - Enhanced static analysis for code quality
+* ✅ **Kotlin Notebook is now bundled in IntelliJ IDEA** - Interactive development and data exploration capabilities
+* ✅ **Junie, the AI coding agent by JetBrains, is now available for Android Studio** - AI-powered development assistance
+
+For the latest updates and detailed roadmap information, visit [kotl.in/roadmap](https://kotlinlang.org/docs/roadmap.html).
 
 ## Compose Multiplatform
 
@@ -54,6 +68,9 @@ so that we can formulate plans for its future development.
 
 We aim to ensure that Kotlin Multiplatform integrates seamlessly with the IDEs already commonly used for KMP development,
 such as IntelliJ IDEA and Android Studio, making it more straightforward to share code within or between projects.
+
+**Recent achievements:**
+* ✅ **New Kotlin Multiplatform plugin for IntelliJ IDEA and Android Studio** - We've released an improved plugin that enhances the development experience with better project setup, navigation, and debugging capabilities.
 
 We are also exploring new areas to enhance the development experience:
 
