@@ -96,6 +96,7 @@
     </td>
     <td>
         <ul>
+          <li><a href="https://mp.weixin.qq.com/s/wOnyjYcka99eFJz8BWlu4Q">《KMP on iOS 深度工程化：模块化、并发编译与 98% 增量构建加速》-Snorlax</a></li>
           <li><a href="https://mp.weixin.qq.com/s/yRwkbQxFsRBNZW3Z-S1A8Q">《B站在KMP跨平台的业务实践之路》-肖志康 & Snorlax</a></li>
           <li><a href="https://www.bilibili.com/video/BV1ntcJeJEsF">《BiliBili 的鸿蒙之路：从 Kotlin/JS 到 Kotlin/Native 的进化之路》-臧至聪</a></li>
           <li><a href="https://mp.weixin.qq.com/s/UajaKomk8XQTwn3BWLo6gw">《基于Kotlin Multiplatform的鸿蒙跨平台开发实践》-臧至聪 & 狒狒</a></li>
@@ -112,9 +113,18 @@
             此外在探索 CMP 实现 Android & iOS 跨平台 UI 开发，通过 UI 逻辑分离策略，在私信模块的成功落地。
             工程化方面，解读分析了 KMP 的构建系统，插件系统，IDEA 集成等等问题，并且提出了基于 Bazel 构建系统 和 Monorepo 的解决方案，实现了 Kotlin Swift Objective-C 三者之间的无缝互调和多语言混编，
             突破了官方所有的 KMP 模块只能聚合成为一个 framework 中的一个模块进行导出的限制，成为业界首个实现分模块导出的方案，甚至遥遥领先于官方。
+            尤其针对 iOS 平台，通过对 Kotlin/Native 编译管线的深度拆解与重构，系统性地解决了其在模块化、编译并发和增量构建方面的核心瓶颈，将 KMP 的研发体验提升至“一等公民”水准，即追平乃至超越苹果官方的 Swift 开发范式。
+            具体来说，在构建系统与编译速度上，实现了 Parallel Compilation ，将每个 Kotlin 模块独立编译为 .a 文件，在一些日常的底层修改的场景下最终产物编译耗时锐减 98% 。
+            这不仅充分释放了 Bazel 的高并发优势，更让“改一行代码、秒级看到结果”的内环反馈成为现实，又由于引入了可靠的remote cache机制兑现了对 Never clean build 的预期。
+            在编码与跨语言交互上，告别了 KMP 默认的“大一统”框架模式。通过为每个 Kotlin 模块生成独立的 Clang module ，并以 @ObjCExport 注解精确控制导出，实现了真正的模块化。
+            这为 Xcode 提供了与原生 Swift/ObjC 无异的模块化 read 体验，也为 IDEA 带来了清晰、可控的跨语言 write 体验。
+            在调试与工程化上，通过修复 source-map 路径和实现可靠的 implementation_deps ，保证了跨语言调试的稳定性和构建的确定性，解决了社区方案中的常见痛点。
           </summary>
           <img src="images/case-studies/bilibili-bilibili-kmp.png" alt="bilibili-bilibili-kmp" width="500" height="200"/>
           <img src="images/case-studies/bilibili-bilibili-kmp-bazel.png" alt="bilibili-bilibili-kmp-bazel" width="500" height="200"/>
+          <img src="images/case-studies/bilibili-bilibili-kmp-kn.png" alt="bilibili-bilibili-kmp-kn" width="500" height="200"/>
+          <img src="images/case-studies/bilibili-bilibili-kmp-kn-opti.png" alt="bilibili-bilibili-kn-opti" width="500" height="200"/>
+          <img src="images/case-studies/bilibili-bilibili-kmp-bazel-vs-swift.png" alt="bilibili-bilibili-bazel-vs-swift" width="500" height="200"/>
           <img src="images/case-studies/bilibili-bilibili-architecture.png" alt="bilibili-bilibili-architecture" width="500" height="200"/>
           <img src="images/case-studies/bilibili-bilibili-cmp-message.png" alt="bilibili-bilibili-cmp-message" width="500" height="200"/>
         </details>
