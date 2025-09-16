@@ -148,6 +148,7 @@
     </td>
     <td>
         <ul>
+          <li><a href="https://mp.weixin.qq.com/s/S-a7DaPo9m9EU6Fy1FYC8g">《腾讯开源框架 Kuikly 再升级！率先适配 “液态玻璃”，原生体验更极致》-Kuikly</a></li>
           <li><a href="https://mp.weixin.qq.com/s/x9TyypzmwraeOvEXHSiiCg">《腾讯Kuikly框架进一步开源，新增支持Web，开启一码五端新体验！》-Kuikly</a></li>
           <li><a href="https://mp.weixin.qq.com/s/XiJJYdr59SV2wUwgjYJztQ">《腾讯开源跨平台开发框架 Kuikly，能显著提升多端开发效率》-Kuikly</a></li>
           <li><a href="https://mp.weixin.qq.com/s/eP3DxAkxX0z8xSMPY9q6TA">《腾讯Kuikly框架鸿蒙版正式开源 —— 揭秘卓越性能适配之旅》-Kuikly</a></li>
@@ -164,10 +165,18 @@
             日活用户超 5 亿。已在业务中广泛使用，显著提升了多端开发效率。
             部分业务在鸿蒙端完全采用 Kuikly 进行开发，进而复用到Android 和 iOS ，显著提升了跨端开发效率。
             框架整体分为 KuiklyBase 和 KuiklyUI 两部分，其中KuiklyBase 与腾讯视频 ovCompose 共建复用。
-            具备一码五端（Android、iOS、鸿蒙、H5、微信小程序），支持鸿蒙平台，原生级性能体验，Kotlin 语言驱动，纯原生开发工具链，声明+响应式 DSL，支持页面级动态化，轻量稳定易维护，高一致性原生渲染方案.
+            具备一码五端（Android、iOS、鸿蒙、H5、微信小程序），支持鸿蒙平台，原生级性能体验，Kotlin 语言驱动，纯原生开发工具链，声明+响应式 DSL，支持页面级动态化，轻量稳定易维护，高一致性原生渲染方案。
+            特别地，对 iOS 26 的液态玻璃适配上，面对如何在保持“通过Kotlin跨端层组合原子组件以最大化UI一致性”的核心理念，与“液态玻璃”所强调的平台原生特色之间选择的挑战，
+            选择灵活处理，将用户体验置于最高优先级，在追求一致性的同时，积极拥抱平台特色。
+            认为跨端一致性的重点，是在不同平台提供符合用户习惯的优质体验，而不是追求UI像素的绝对相同。因此选择以一种灵活、务实的方式来拥抱平台特色。
+            对于常用组件，尽可能在跨端层抹平差异，提供一致的开发体验；同时通过“自定义组件”来解决系统对高级组件所做的特殊优化，例如叠加的复杂交互动画效果。
+            这种设计思路，使得我们能够在统一代码库的基础上，仍能充分发挥平台原生体验的优势。
+            兼容性方面，对旧系统和其他平台，可以做到框架层自动降级为原有样式的默认实现，避免业务代码编写大量的平台判断逻辑。
           </summary>
           <img src="images/case-studies/tencent-tds-kuikly.png" alt="tencent-tds-kuikly" width="500" height="600"/>
           <img src="images/case-studies/tencent-tds-kuikly-ohos.png" alt="tencent-tds-kuikly-ohos" width="500" height="600"/>
+          <img src="images/case-studies/tencent-tds-kuikly-liquid-glass.gif" alt="tencent-tds-kuikly-liquid-glass" width="500" height="600"/>
+          <img src="images/case-studies/tencent-tds-kuikly-liquid-glass-summary.png" alt="tencent-tds-kuikly-liquid-glass-summary" width="500" height="600"/>
         </details>
         <br>
         <details>
