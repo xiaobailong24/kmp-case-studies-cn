@@ -243,6 +243,7 @@
     </td>
     <td>
         <ul>
+            <li><a href="https://mp.weixin.qq.com/s/k_w9MduF8FL5w98pg5r2nQ">《支付宝 KJS Compose 动态化方案与架构设计》-潘云逸（法慧）</a></li>
             <li><a href="https://b23.tv/dceezgb">《支付宝的 KMP 架构实践 ｜ Kotlin 中文开发者大会 2025》-依希&法慧&重吾</a></li>
             <li><a href="https://mp.weixin.qq.com/s/1-d3TVyTZMJtzTafyI0GAg">《支付宝 MYKMP 原生跨平台解决方案》-何斌</a></li>
             <li><a href="https://mp.weixin.qq.com/s/vcuo2YJsrn3kQcTNuoLuGQ">《支付宝客户端 Kotlin/Native 包体积优化实践》-李皓骅(亿晨)</a></li>
