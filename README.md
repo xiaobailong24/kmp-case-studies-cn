@@ -243,7 +243,8 @@
     </td>
     <td>
         <ul>
-            <li><a href="https://b23.tv/dceezgb">《支付宝的 KMP 架构实践 ｜ Kotlin 中文开发者大会 2025》-何斌</a></li>
+            <li><a href="https://b23.tv/dceezgb">《支付宝的 KMP 架构实践 ｜ Kotlin 中文开发者大会 2025》-依希&法慧&重吾</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/1-d3TVyTZMJtzTafyI0GAg">《支付宝 MYKMP 原生跨平台解决方案》-何斌</a></li>
             <li><a href="https://mp.weixin.qq.com/s/vcuo2YJsrn3kQcTNuoLuGQ">《支付宝客户端 Kotlin/Native 包体积优化实践》-李皓骅(亿晨)</a></li>
             <li><a href="https://d2.alibabatech.com/18">《基于KMP的原生研发框架新探索-DX4.0》-王康(正物)</a></li>
             <li><a href="https://d2.alibabatech.com/">《淘宝 weex 跨多端业务高效交付实践》-张翰(门柳) & 史健平(楚奕)</a></li>
