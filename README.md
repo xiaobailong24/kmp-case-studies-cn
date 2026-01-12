@@ -211,7 +211,11 @@
     </td>
     <td>
         <ul>
-            <li><a href="https://b23.tv/0qsdC6s">《快手团队的 KMP 多平台业务落地实践｜2025 Kotlin 中文开发者大会》-张人杰、闫昌森</a></li>
+            <li><a href="https://b23.tv/0qsdC6s">《快手团队的 KMP 多平台业务落地实践｜2025 Kotlin 中文开发者大会》-张人杰、闫昌森</a>
+                <ul>
+                    <li><a href="docs/case-studies/kuaishou/2025Kotlin中文开发者大会-张人杰、闫昌森-快手团队的%20KMP%20多平台业务落地实践.pdf">PDF 演讲稿</a></li>
+                </ul>
+            </li>
             <li><a href="https://qcon.infoq.cn/2025/beijing/presentation/6292">《存量互联网时代的大前端生存之道》-周全</a></li>
             <li><a href="https://www.bilibili.com/video/BV1ntcJeJEYd">《快手团队的 KMP 鸿蒙落地实践》-张人杰</a></li>
             <li><a href="https://www.bilibili.com/video/BV1Nn4y1X7yf">《KMP 到鸿蒙：基于 Cinterop 和 KSP 简化跨语言交互的实践》-车林阳</a></li>
@@ -245,7 +249,11 @@
     <td>
         <ul>
             <li><a href="https://mp.weixin.qq.com/s/k_w9MduF8FL5w98pg5r2nQ">《支付宝 KJS Compose 动态化方案与架构设计》-潘云逸（法慧）</a></li>
-            <li><a href="https://b23.tv/dceezgb">《支付宝的 KMP 架构实践｜2025 Kotlin 中文开发者大会》-何斌</a></li>
+            <li><a href="https://b23.tv/dceezgb">《支付宝的 KMP 架构实践｜2025 Kotlin 中文开发者大会》-何斌</a>
+                <ul>
+                    <li><a href="docs/case-studies/alibaba/2025Kotlin中文开发者大会-何斌-支付宝的%20KMP%20架构实践.pdf">PDF 演讲稿</a></li>
+                </ul>
+            </li>
             <li><a href="https://mp.weixin.qq.com/s/F2Sger6KUNio6TNYIkEivw">《AI Agent 编码助手实战：面向 KMP 原生跨端实现研发提效｜2025 QCon 上海》-马静</a></li>
             <li><a href="https://mp.weixin.qq.com/s/1-d3TVyTZMJtzTafyI0GAg">《支付宝 MYKMP 原生跨平台解决方案》-依希&法慧&重吾</a></li>
             <li><a href="https://mp.weixin.qq.com/s/vcuo2YJsrn3kQcTNuoLuGQ">《支付宝客户端 Kotlin/Native 包体积优化实践》-李皓骅(亿晨)</a></li>
@@ -301,7 +309,11 @@
     </td>
     <td>
         <ul>
-            <li><a href="https://www.bilibili.com/video/BV1awrKB6EjX">《KMP 在字节跳动的工程化落地实践｜2025 Kotlin 中文开发者大会》-吴霖鹏</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1awrKB6EjX">《KMP 在字节跳动的工程化落地实践｜2025 Kotlin 中文开发者大会》-吴霖鹏</a>
+                <ul>
+                    <li><a href="docs/case-studies/bytedance/2025Kotlin中文开发者大会-吴霖鹏-KMP%20在字节跳动的工程化落地实践.pdf">PDF 演讲稿</a></li>
+                </ul>
+            </li>
             <li><a href="https://mp.weixin.qq.com/s/ZTwg9PiYlA_jL3i56LIB0g">《ByteKMP Compose ArkUI 原生渲染解决方案》-寿康</a></li>
             <li><a href="https://mp.weixin.qq.com/s/yCqkGNPfngHGUx9BlhGFdQ">《Compose 智能重组：编译器视角下的黑科技》-吴霖鹏</a></li>
             <li><a href="https://mp.weixin.qq.com/s/27_wde0Nybovpb6hnRgghg">《Kotlin 与 ArkTS 交互性能与效率优化实践》-吴霖鹏</a></li>
