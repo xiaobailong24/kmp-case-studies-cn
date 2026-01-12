@@ -285,6 +285,39 @@
     </td>
   </tr>
   <tr>
+    <td><a href="https://www.bytedance.com">字节跳动</a></td>
+    <td>
+        <ul>
+          <li><a href="https://kimi.moonshot.cn/">抖音</a></li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li><img src="images/icons/android.svg" alt="android" width="40" height="40"/></li>
+            <li><img src="images/icons/desktop.svg" alt="desktop" width="60" height="40"/></li>
+            <li><img src="images/icons/harmonyos.svg" alt="harmonyos" width="80" height="40"/></li>
+            <li><img src="images/icons/compose-multiplatform.svg" alt="compose-multiplatform" width="60" height="40"/></li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li><a href="https://www.bilibili.com/video/BV1awrKB6EjX">《KMP 在字节跳动的工程化落地实践｜2025 Kotlin 中文开发者大会》-吴霖鹏</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/ZTwg9PiYlA_jL3i56LIB0g">《ByteKMP Compose ArkUI 原生渲染解决方案》-寿康</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/yCqkGNPfngHGUx9BlhGFdQ">《Compose 智能重组：编译器视角下的黑科技》-吴霖鹏</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/27_wde0Nybovpb6hnRgghg">《Kotlin 与 ArkTS 交互性能与效率优化实践》-吴霖鹏</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/hygSUGckQIFIqotoEEz1Qg">《Kmp 内存分配和 GC 优化分析和实践》-万钰臻</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/qAL92PwaUwikdJRtUeEH5Q">《Kotlin Multiplatform 原理深入分析》-万鑫&万钰臻</a></li>
+        </ul>
+    </td>
+    <td>
+        <details>
+          <summary>抖音选择 KMP + CMP 开发框架，在 Kotlin/Native 内存优化，ArkTS 跨语言交互、Compose 渲染等方面有深入优化和落地实践。
+          </summary>
+          <img src="images/case-studies/bytedance-douyin-bytekmp-cmp-arkui.png" alt="bytedance-douyin-bytekmp-cmp-arkui" width="500" height="200"/>
+        </details>
+    </td>
+  </tr>
+  <tr>
     <td><a href="https://www.moonshot.cn/">月之暗面</a></td>
     <td>
         <ul>
