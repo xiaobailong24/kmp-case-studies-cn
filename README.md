@@ -2,7 +2,7 @@
 
 [![Pull request](https://img.shields.io/badge/PRs-welcome-success?style=flat)](https://github.com/xiaobailong24//kotlin-multiplatform-dev-docs/pulls)
 
-都 2025 年了，还在犹豫要不要使用 Kotlin Multiplatform(KMP) 进行跨平台开发？
+都 2026 年了，还在犹豫要不要使用 Kotlin Multiplatform(KMP) 进行跨平台开发？
 
 国内 KMP 实践案例收集，是官方 [Case Studies](https://www.jetbrains.com/help/kotlin-multiplatform-dev/case-studies.html)
 的补充。
