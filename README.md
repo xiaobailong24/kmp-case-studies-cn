@@ -248,6 +248,7 @@
     </td>
     <td>
         <ul>
+            <li><a href="https://mp.weixin.qq.com/s/MnuvbawnSgZ741NGQnRSUQ">《支付宝 MYTab 三端一码重构与性能攻坚实战》-悟桐</a></li>  
             <li><a href="https://mp.weixin.qq.com/s/k_w9MduF8FL5w98pg5r2nQ">《支付宝 KJS Compose 动态化方案与架构设计》-潘云逸（法慧）</a></li>
             <li><a href="https://b23.tv/dceezgb">《支付宝的 KMP 架构实践｜2025 Kotlin 中文开发者大会》-何斌</a>
                 <ul>
@@ -309,6 +310,7 @@
     </td>
     <td>
         <ul>
+            <li><a href="https://juejin.cn/post/7600293373475373056">《PausableComposition 如何提升 Compose 滑动性能》-吴霖鹏</a>
             <li><a href="https://www.bilibili.com/video/BV1awrKB6EjX">《KMP 在字节跳动的工程化落地实践｜2025 Kotlin 中文开发者大会》-吴霖鹏</a>
                 <ul>
                     <li><a href="docs/case-studies/bytedance/2025Kotlin中文开发者大会-吴霖鹏-KMP%20在字节跳动的工程化落地实践.pdf">PDF 演讲稿</a></li>
