@@ -10,6 +10,7 @@ KMP/CMP 相关的技术会议、演讲和视频资源。
 |-------|------|------|
 | [#8](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/8) | [KotlinConf 2025 — 全部录像已上线](kotlinconf-2025.md) | 2025 |
 | [#41](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/41) | KotlinConf'26 | 2026 |
+| [#78](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/78) | [KotlinConf 2026 完整日程](kotlinconf-2026.md) | 2026 |
 
 ### droidcon
 

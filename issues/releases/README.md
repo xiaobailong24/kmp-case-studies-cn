@@ -24,7 +24,7 @@
 | [#24](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/24) | Jetpack Compose 1.9 | — |
 | [#46](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/46) | CMP 1.9.0 | Web 进入 Beta |
 | [#55](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/55) | CMP 1.10.0 | — |
-| [#67](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/67) | CMP 1.10（追踪） | — |
+| [#67](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/67) | CMP 1.10（追踪） | Pausable Composition 等新特性 |
 | [#68](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/68) | CMP 1.11（追踪） | — |
 
 ## 构建工具与 IDE

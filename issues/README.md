@@ -121,7 +121,7 @@ issues/
 | [#41](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/41) | KotlinConf'26 |
 | [#42](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/42) | DroidKaigi 2025 |
 | [#50](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/50) | droidcon Berlin 2025 |
-| [#78](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/78) | KotlinConf'26（重复） |
+| [#78](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/78) | KotlinConf 2026 完整日程 |
 
 ### 生态与行业动态 [`ecosystem/`](ecosystem/)
 
