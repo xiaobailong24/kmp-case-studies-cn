@@ -27,22 +27,29 @@ issues/
 
 ## 分类速查表
 
-### 版本发布与路线图 [`releases/`](releases/)
+### 版本发布与路线图 [`releases/`](releases/) · [📅 时间线](releases/timeline.md)
 
-| Issue | 标题 | 关键词 |
-|-------|------|--------|
-| [#32](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/32) | Kotlin Roadmap Update 2025 August | 路线图, KLP, CMP iOS Stable |
-| [#16](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/16) | Kotlin 2.2.20 发布 | Kotlin 版本 |
-| [#53](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/53) | Kotlin 2.3.0 发布 | Kotlin 版本 |
-| [#23](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/23) | CMP runtime klibs 缩小 600 倍 | CMP 1.9.0-beta01 |
-| [#24](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/24) | Jetpack Compose 1.9 发布 | Jetpack Compose |
-| [#46](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/46) | Compose Multiplatform 1.9.0 发布 | CMP, Web Beta |
-| [#55](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/55) | Compose Multiplatform 1.10.0 发布 | CMP |
-| [#67](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/67) | CMP 1.10 | CMP |
-| [#68](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/68) | CMP 1.11 | CMP |
-| [#20](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/20) | Gradle 9.0.0 GA 发布 | Gradle |
-| [#45](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/45) | Java 25 LTS and IntelliJ IDEA | Java, IDE |
-| [#73](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/73) | KMP 2025 was huge, 2026 will be bigger! | 年度总结 |
+| 日期 | Issue | 标题 | 类别 |
+|------|-------|------|------|
+| 2026-01-23 | [#73](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/73) | KMP 2025 年度总结 | 年度总结 |
+| 2026-01-22 | [#72](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/72) | Android Gradle Plugin 9.0 | 工具 |
+| 2026-01-05 | [#68](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/68) | CMP 1.11（追踪） | 版本 |
+| 2025-12-25 | [#67](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/67) | CMP 1.10 — Pausable Composition | 版本 |
+| 2025-10-08 | [#55](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/55) | Compose Multiplatform 1.10.0 发布 | 版本 |
+| 2025-10-07 | [#53](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/53) | Kotlin 2.3.0 发布 | 版本 |
+| 2025-09-24 | [#48](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/48) | KMP Plugin for IDEA & Android Studio | 工具 |
+| 2025-09-17 | [#47](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/47) | Compose Hot-Reload — 已 Stable | 工具 |
+| 2025-09-16 | [#46](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/46) | CMP 1.9.0 — Web 进入 Beta | 版本 |
+| 2025-09-16 | [#45](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/45) | Java 25 LTS and IntelliJ IDEA | 版本 |
+| 2025-08-25 | [#32](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/32) | Kotlin Roadmap Update 2025 | 路线图 |
+| 2025-08-15 | [#24](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/24) | Jetpack Compose 1.9 发布 | 版本 |
+| 2025-08-15 | [#23](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/23) | CMP 1.9.0-beta01 — klibs 缩小 600x | 版本 |
+| 2025-08-01 | [#20](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/20) | Gradle 9.0.0 GA 发布 | 版本 |
+| 2025-07-29 | [#16](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/16) | Kotlin 2.2.20 发布 | 版本 |
+| 2025-07-29 | [#15](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/15) | CMP Previews 配置指南 | 工具 |
+| 2025-07-29 | [#14](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/14) | Git Client from JetBrains | 工具 |
+| 2025-07-29 | [#13](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/13) | IntelliJ IDEA 统一发行版 | 工具 |
+| 2025-07-29 | [#11](https://github.com/xiaobailong24/kmp-case-studies-cn/issues/11) | Develocity Plugin for IntelliJ | 工具 |
 
 ### Compose 技术深度 [`compose/`](compose/)
 
