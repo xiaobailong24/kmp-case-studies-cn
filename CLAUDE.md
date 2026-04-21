@@ -1,129 +1,173 @@
 # CLAUDE.md
 
-## Project Overview
+## 本仓库是什么
 
-This is a **JetBrains Writerside documentation repository** that collects Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP) adoption case studies from Chinese technology companies. It supplements the official [JetBrains KMP Case Studies](https://www.jetbrains.com/help/kotlin-multiplatform-dev/case-studies.html).
+本仓库 fork 自 [JetBrains/kotlin-multiplatform-dev-docs](https://github.com/JetBrains/kotlin-multiplatform-dev-docs)（JetBrains 官方 KMP/CMP 开发者文档），在保留上游全部英文文档的基础上，**新增了大量中国视角的原创中文内容**。
 
-**This is NOT a software project** — there is no build system (Gradle/Maven), no tests, and no application code. It is a pure documentation site published via Writerside.
+**这不是软件项目** — 没有构建系统（Gradle/Maven）、没有测试、没有应用代码。纯文档站，通过 Writerside 发布。
 
-## Repository Structure
+## 与上游仓库的核心差异
+
+### 上游仓库（JetBrains 官方）
+
+JetBrains 官方 KMP 文档，英文，内容包括入门教程、API 参考、Compose Multiplatform 文档、工具链指南。**没有中文内容，没有中国公司案例**。
+
+### 本 Fork 新增的内容
+
+#### 1. 中国公司 KMP/CMP 实践案例 `topics/case-studies-cn/`
+
+核心差异化内容。收录了 8 家中国科技公司、10+ 款应用的 KMP/CMP 实践：
+
+| 公司 | 应用 | 平台 |
+|------|------|------|
+| 美团 | 餐饮 SaaS | Android, iOS, Windows |
+| 携程 | 携程旅行 | Android, iOS |
+| 哔哩哔哩 | Bilibili | Android, iOS, HarmonyOS, CMP |
+| 腾讯 | QQ, 腾讯视频 | Android, iOS, HarmonyOS, CMP |
+| 快手 | 快手 | Android, iOS, HarmonyOS |
+| 阿里 | 淘宝, 支付宝 | Android, iOS, HarmonyOS, CMP |
+| 字节跳动 | 抖音 | Android, Desktop, HarmonyOS, CMP |
+| 月之暗面 | Kimi | Android, Desktop, HarmonyOS, CMP |
+
+每个案例包含公司背景、架构图、公开演讲链接（Bilibili 视频、微信公众号文章、会议 PPT）。
+
+#### 2. 会议演讲 PDF `docs/case-studies/`
+
+2025 Kotlin 中文开发者大会的原始 PPT：
+- `alibaba/` — 支付宝 KMP 架构（何斌）
+- `bytedance/` — 字节跳动 KMP 工程实践（吴霖鹏）
+- `kuaishou/` — 快手 KMP 多平台实践（张人杰、闫昌森）
+
+#### 3. 架构图 `images/case-studies/`
+
+21 张原创图片：各公司 KMP/CMP 架构图、对比截图、技术方案图。
+
+#### 4. HarmonyOS 图标 `images/icons/harmonyos.svg`
+
+上游仅有 Android/iOS/Desktop/Web/Server 图标。本 Fork 新增了 HarmonyOS 图标，反映中国市场对鸿蒙的重视。
+
+#### 5. Issue 知识库 `issues/`
+
+将仓库 71 个 GitHub Issue 整理为结构化知识库（54 个文件，9 个分类）：
+
+```
+issues/
+├── releases/          # 版本发布时间线（Kotlin/CMP/Gradle）
+├── compose/           # Compose 技术深度
+│   ├── runtime/       #   Runtime / State / 重组
+│   ├── ui/            #   组件 / 布局 / 原生互操作
+│   └── tooling/       #   Hot-Reload / Preview / Visual Editor
+├── kotlin/            # Kotlin 语言与运行时
+│   ├── language/      #   expect/actual / Wasm
+│   ├── native/        #   K/N 互操作 / Runtime
+│   └── coroutines/    #   Flow / Mutex
+├── architecture/      # 架构（分层 / SDUI / RemoteCompose）
+├── tools/             # 工具（AGP 9 / IDE 插件）
+├── libraries/         # 生态库（Nav3 / Firebase / Koin）
+├── conferences/       # 会议（KotlinConf / DroidKaigi）
+├── ecosystem/         # 行业动态（腾讯 Kuikly / Meta Buck2）
+└── articles/          # 文章与观点
+```
+
+#### 6. README.md 完全重写
+
+上游 README 是标准项目说明。本 Fork 的 README.md 是中文案例汇总表，含公司链接、App Store 链接、平台图标、可折叠架构摘要。
+
+### 未改动的部分
+
+以下内容与上游保持同步，未做修改：
+- `topics/compose/` `topics/compose-onboard/` `topics/development/` 等标准教程
+- `topics/multiplatform-onboard/` `topics/journal/` `topics/overview/` `topics/tools/`
+- `writerside.cfg` `mpd.tree` `v.list` `labels.list` `cfg/` 配置
+- `snippets/` 代码示例
+
+## 仓库结构
 
 ```
 kmp-case-studies-cn/
-├── .github/workflows/     # CI (Junie workflow for documentation processing)
-├── .devcontainer/         # Dev container config (Java 21, Maven, Gradle)
-├── cfg/                   # Writerside build profiles, analytics, styling
-│   ├── buildprofiles.xml
-│   ├── build-script.xml
-│   └── thirdparty/        # Third-party analytics and favicon configs
-├── docs/case-studies/     # PDF resources for case studies
-│   ├── alibaba/
-│   ├── bytedance/
-│   └── kuaishou/
-├── images/                # Image assets (~230MB) for documentation
-│   ├── case-studies/      # Case study screenshots and architecture diagrams
-│   ├── compose/           # Compose Multiplatform images
-│   └── icons/             # Platform icons (android, ios, desktop, etc.)
-├── snippets/              # Code examples referenced by documentation
-│   ├── android-ios-tutorial/  # Swift code examples
-│   └── multiplatform-tutorial/ # Kotlin code examples
-├── topics/                # Markdown documentation content (64 files)
-│   ├── case-studies-cn/   # Chinese company case studies
-│   ├── compose/           # Compose Multiplatform docs
-│   ├── compose-onboard/   # Compose onboarding guides
-│   ├── development/       # Development tutorials
-│   ├── journal/           # Articles and journals
-│   ├── multiplatform-onboard/ # KMP onboarding
-│   ├── overview/          # Overview and FAQ
-│   ├── tools/             # Tooling documentation
-│   └── whats-new/         # Release notes
-├── writerside.cfg         # Main Writerside config (module, topics, snippets)
-├── mpd.tree               # Documentation navigation tree (95 toc-elements)
-├── v.list                 # Version variables (Compose, Kotlin, Ktor, etc.)
-├── labels.list            # Label definitions (deprecated, experimental, etc.)
-├── README.md              # Chinese README with case study summary table
-└── README_EN.md           # English README
+├── .github/workflows/     # CI
+├── .devcontainer/         # Dev container (Java 21)
+├── cfg/                   # Writerside 构建配置
+├── docs/case-studies/     # 【Fork 新增】会议 PDF（alibaba/bytedance/kuaishou）
+├── images/
+│   ├── case-studies/      # 【Fork 新增】案例架构图（21 张）
+│   ├── compose/           # Compose 图片（上游）
+│   └── icons/             # 平台图标（上游 + Fork 新增 harmonyos.svg）
+├── issues/                # 【Fork 新增】Issue 知识库（54 个文件）
+├── snippets/              # 代码示例（上游）
+├── topics/
+│   ├── case-studies-cn/   # 【Fork 新增】中国公司案例
+│   ├── compose/           # Compose 文档（上游）
+│   ├── compose-onboard/   # Compose 入门（上游）
+│   ├── development/       # 开发教程（上游）
+│   ├── journal/           # 文章（上游）
+│   ├── multiplatform-onboard/ # KMP 入门（上游）
+│   ├── overview/          # 概览（上游）
+│   ├── tools/             # 工具文档（上游）
+│   └── whats-new/         # 更新日志（上游）
+├── writerside.cfg         # Writerside 主配置
+├── mpd.tree               # 导航树（95 个节点）
+├── v.list                 # 版本变量
+├── README.md              # 【Fork 重写】中文案例汇总表
+└── README_EN.md           # 英文 README
 ```
 
-## Key Configuration Files
+## 关键配置文件
 
-| File | Purpose |
-|------|---------|
-| `writerside.cfg` | Main config — Writerside 2.1.1991-p6895, module name, paths |
-| `mpd.tree` | Navigation tree defining the site structure and page ordering |
-| `v.list` | Template variables for library versions used across docs |
-| `labels.list` | Label system for experimental/deprecated/platform markers |
-| `cfg/buildprofiles.xml` | Build profiles, analytics, custom CSS |
-| `cfg/build-script.xml` | Artifact type (web2) configuration |
+| 文件 | 用途 |
+|------|------|
+| `writerside.cfg` | 主配置 — Writerside 2.1.1991-p6895, 模块、路径 |
+| `mpd.tree` | 导航树，定义站点结构和页面顺序 |
+| `v.list` | 模板变量（Compose/Kotlin/Ktor 等版本号） |
+| `labels.list` | 标签系统（deprecated/experimental/platform） |
+| `cfg/buildprofiles.xml` | 构建配置、分析、自定义 CSS |
 
-## Content Conventions
+## 内容规范
 
-### Documentation Files (topics/)
-- **Format**: Markdown (`.md`) and Writerside topic (`.topic`) files
-- **Naming**: kebab-case filenames (e.g., `multiplatform-create-first-app.md`)
-- **Language**: Content is primarily in Chinese; some technical docs in English
-- **Variables**: Use `%varName%` syntax referencing values from `v.list`
+### 文档文件 (topics/)
+- **格式**: Markdown (`.md`) 和 Writerside topic (`.topic`)
+- **命名**: kebab-case（如 `multiplatform-create-first-app.md`）
+- **语言**: 案例和 Issue 知识库为中文；上游教程为英文
+- **变量**: 使用 `%varName%` 引用 `v.list` 中的版本号
 
-### Case Studies (topics/case-studies-cn/)
-- Each company gets its own `.md` file
-- Include company background, apps using KMP/CMP, architecture details
-- Reference images from `images/case-studies/`
-- Link to external presentations, GitHub repos, and articles
+### 案例 (topics/case-studies-cn/)
+- 每家公司一个 `.md` 文件
+- 包含公司背景、使用 KMP/CMP 的应用、架构细节
+- 图片引用 `images/case-studies/`
+- 链接外部演讲、GitHub 仓库和文章
 
-### README.md (root)
-- Contains a summary table of all case studies with:
-  - Company name and link
-  - App names with App Store links
-  - Platform support icons (Android/iOS/Desktop)
-  - Links to public presentations and articles
-  - Collapsible summaries with architecture diagrams
+### Issue 知识库 (issues/)
+- 每级目录有 `README.md` 汇总表
+- 重要 Issue 有独立 `.md` 子文档
+- 官方更新类按时间倒序排列（见 `issues/releases/timeline.md`）
+- 英文博客提供中文归纳或翻译
 
-### Images
-- Stored in `images/` with subdirectories by topic
-- Platform icons in `images/icons/` (android.svg, ios.svg, desktop.svg, etc.)
-- Case study diagrams in `images/case-studies/`
-- Referenced via relative paths in markdown
+## 开发工作流
 
-### Code Snippets
-- Located in `snippets/` directory
-- Referenced from documentation using Writerside snippet syntax
-- Kotlin and Swift examples for tutorials
+### 新增案例
+1. 在 `topics/case-studies-cn/` 创建 `.md` 文件
+2. 在 `images/case-studies/` 添加架构图
+3. 在 `docs/case-studies/<company>/` 添加 PDF 资源
+4. 更新 `mpd.tree` 导航树
+5. 更新 `README.md` 汇总表
 
-## Version Variables (v.list)
+### 新增 Issue 知识库文档
+1. 在 `issues/` 对应分类目录下创建 `.md` 文件
+2. 更新该分类的 `README.md`
+3. 更新 `issues/README.md` 顶层速查表
+4. 官方更新类同步更新 `issues/releases/timeline.md`
 
-Key versions tracked:
-- Compose Multiplatform: 1.7.3 (EAP: 1.7.0-rc01)
-- Kotlin: 2.0.0
-- Coroutines: 1.7.3
-- Ktor: 2.3.7
-- SQLDelight: 2.0.1
-- Koin: 3.5.3
+### 提交规范
+- 中文或英文均可
+- 描述性（如 "Add 字节跳动-抖音实践案例", "Update README.md"）
+- 无严格 conventional commit 格式要求
 
-## Development Workflow
+## AI 助手注意事项
 
-### Adding a New Case Study
-1. Create a new `.md` file in `topics/case-studies-cn/`
-2. Add architecture diagrams/screenshots to `images/case-studies/`
-3. Add any PDF resources to `docs/case-studies/<company>/`
-4. Update `mpd.tree` to include the new page in the navigation
-5. Update the summary table in `README.md`
-
-### Editing Documentation
-1. Modify `.md` files in `topics/`
-2. If adding new pages, register them in `mpd.tree`
-3. Use Writerside variables (`%varName%`) for version numbers
-4. Preview locally using JetBrains Writerside IDE plugin
-
-### Commit Message Conventions
-- Commit messages are in Chinese or English
-- Descriptive of the change (e.g., "Add 字节跳动-抖音实践案例", "Update README.md")
-- No strict conventional commit format enforced
-
-## Important Notes for AI Assistants
-
-1. **No build/test commands** — This is a documentation-only repo. There are no `./gradlew` commands, test suites, or CI builds to run.
-2. **Large binary assets** — The `images/` directory is ~230MB. Avoid reading image files unnecessarily.
-3. **Writerside-specific syntax** — Documentation uses Writerside extensions (collapsible sections, tabs, tooltips, admonitions). Refer to [Writerside docs](https://www.jetbrains.com/help/writerside/) for syntax.
-4. **Chinese content** — Most documentation and commit messages are in Chinese. Respect the existing language conventions when editing.
-5. **Navigation tree** — Any new topic file MUST be added to `mpd.tree` to appear in the published site.
-6. **License** — Apache License 2.0. Follow JetBrains Open Source Code of Conduct.
+1. **无构建/测试命令** — 纯文档仓库，没有 `./gradlew`、测试套件或 CI 构建
+2. **大二进制文件** — `images/` 约 230MB，避免无谓读取图片文件
+3. **Writerside 语法** — 文档使用 Writerside 扩展（折叠区、Tab、提示框），参考 [Writerside 文档](https://www.jetbrains.com/help/writerside/)
+4. **中文内容** — 案例和 Issue 知识库为中文，上游教程保持英文
+5. **导航树** — 新增的 topic 文件必须添加到 `mpd.tree`
+6. **Fork 差异意识** — 修改文件前判断是上游内容还是 Fork 新增内容；上游内容一般不主动修改
+7. **License** — Apache License 2.0
