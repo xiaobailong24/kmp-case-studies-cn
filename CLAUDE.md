@@ -48,26 +48,7 @@ JetBrains 官方 KMP 文档，英文，内容包括入门教程、API 参考、C
 
 #### 5. Issue 知识库 `issues/`
 
-将仓库 71 个 GitHub Issue 整理为结构化知识库（54 个文件，9 个分类）：
-
-```
-issues/
-├── releases/          # 版本发布时间线（Kotlin/CMP/Gradle）
-├── compose/           # Compose 技术深度
-│   ├── runtime/       #   Runtime / State / 重组
-│   ├── ui/            #   组件 / 布局 / 原生互操作
-│   └── tooling/       #   Hot-Reload / Preview / Visual Editor
-├── kotlin/            # Kotlin 语言与运行时
-│   ├── language/      #   expect/actual / Wasm
-│   ├── native/        #   K/N 互操作 / Runtime
-│   └── coroutines/    #   Flow / Mutex
-├── architecture/      # 架构（分层 / SDUI / RemoteCompose）
-├── tools/             # 工具（AGP 9 / IDE 插件）
-├── libraries/         # 生态库（Nav3 / Firebase / Koin）
-├── conferences/       # 会议（KotlinConf / DroidKaigi）
-├── ecosystem/         # 行业动态（腾讯 Kuikly / Meta Buck2）
-└── articles/          # 文章与观点
-```
+将仓库 GitHub Issue 整理为结构化知识库，按 9 个主题分类（releases / compose / kotlin / architecture / tools / libraries / conferences / ecosystem / articles），每级目录有 `README.md` 汇总，重要 Issue 有独立子文档。详见 [`issues/README.md`](issues/README.md)。
 
 #### 6. README.md 完全重写
 
@@ -93,7 +74,7 @@ kmp-case-studies-cn/
 │   ├── case-studies/      # 【Fork 新增】案例架构图（21 张）
 │   ├── compose/           # Compose 图片（上游）
 │   └── icons/             # 平台图标（上游 + Fork 新增 harmonyos.svg）
-├── issues/                # 【Fork 新增】Issue 知识库（54 个文件）
+├── issues/                # 【Fork 新增】Issue 知识库（详见 issues/README.md）
 ├── snippets/              # 代码示例（上游）
 ├── topics/
 │   ├── case-studies-cn/   # 【Fork 新增】中国公司案例
